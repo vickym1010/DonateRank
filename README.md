@@ -1,8 +1,7 @@
 # DonateRank
 DonateRank, A plugin that Helps you out with Donations
 
-> Requested for MikkiMCPE
-
+> Requested By MikkiMCPE
 -------------
 This plugin was requested by MikkiMCPE,
 This plugin will give the player the rank they want
@@ -20,4 +19,5 @@ a custom Phone number for $$ deposit.
 | /donate | desc <rank> | Adds a description to Rank, OP ONLY |
 
 ### Permissions:
-Soon to be added,
+At the Wiki,
+Which soon will be done, (after finishing plugin)

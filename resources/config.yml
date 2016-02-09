@@ -1,0 +1,25 @@
+# Default User Phone Number:
+# Please use the -, because Spaces might corrupt the config.
+phonenum: 55-555-555-5555 
+# Use phone Number:
+usphonenum: true
+# Use email (for Paypal and like accounts):
+usemail: false
+# Paypal (or related) email account:
+emailacc: myemail@acooldoma.in
+# Unique Code character limit:
+ucchlmt: 6
+# Send Unique Code to an email:
+# If used, the Save Unique code on Log file SHOULD be disabled, or plugin may crash
+senducem: false
+# Write the email for Donations Email
+emailuc: myemail@acooldoma.in
+# Unique Code email Example:
+# Subject: [ServerName] $playername has requestes a rank:
+# Message: THIS MESSAGE IS PRE-WRITTEN, DO NOT REPLY - TKRT
+# Message: The Player $playername has requested the rank: $rankreq
+# Message: You should wait for deposit, after he deposited. request him
+# Message: The Following Unique Code and The rank he requested:
+# Message: Unique code: $playeruc
+# Message: Rank: $rankreq
+# Message: Rank Cost: $rankcost

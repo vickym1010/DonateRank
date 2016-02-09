@@ -55,22 +55,7 @@ class Main extends PluginBase implements Listener{
 		echo "status:" . $zip->status . "\n";
 		$zip->close();
 	}
-	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-		switch($cmd->getName()){
-            case "donation":
-				if ($sender->hasPermission("donrank")){
-					$sender->sendMessage(TextFormat::RED."---------DonateRank--------");
-					$sender->sendMessage(TextFormat::YELLOW."--No subcommands provided--");
-					$sender->sendMessage(TextFormat::GREEN."/donation rank <rank> - Claim a rank");
-					$sender->sendMessage(TextFormat::BLUE."/donation rank list - shows a list of ranks available");
-					$sender->sendMessage(TextFormat::GREEN."/donation add <rank> - adds a rank to the list (OP)");
-					$sender->sendMessage(TextFormat::BLUE."/donation delete <rank> - deletes a rank to the list (OP)");
-	}else{
-		$sender->sendMessage($this->permMessage);
-		return true;
-		 }
-		}
-	}
+
 	if(strtolower($command->getName()) == "donation"){
 			if(!(isset($args[0]))){
 				if ($sender->hasPermission("donrank")){

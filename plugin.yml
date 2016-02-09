@@ -1,0 +1,33 @@
+name: Donation Rank
+main: DonRank\Main
+version: 0.1.0A
+api: [1.11.0, 1.12.0, 1.13.0]
+commands:
+  donation:
+    usage: /donation
+    description: Main Command of Donation Rank
+    permission: donrank
+permissions:
+  donrank:
+      default: true
+      description: Main Command of Donation Rank
+    children:
+      donrank.ranks:
+          default: true
+          description: Main Subcommand of Ranks of Donation Rank
+        children: 
+          donrank.ranks.list:
+          default: true
+          description: Shows list of Recorded Ranks
+        donrank.rankgrp:
+          default: op
+          description: Main Permission for adding and deleting ranks 
+          children:
+          donrank.rankgrp.add:
+            default: op
+            description: Adds a rank to the List
+          donrank.rankgrp.delete:
+            default: op
+            description: Removes a rank from the list
+#TODO:
+# Something :D

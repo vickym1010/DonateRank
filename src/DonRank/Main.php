@@ -12,6 +12,8 @@ class Main extends PluginBase implements Listener{
 	public function onEnable(){
 		$this->getLogger()->info(TextFormat::BlUE."Loading Plugin...");
 		$this->saveDefaultConfig();
+
+			$this->getLogger()->info(TextFormat::YELLOW."Backup Folder Created/Loaded");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		if(!(is_dir($this->getDataFolder()."Pending_Users/"))){
 			@mkdir($this->getDataFolder()."Pending_Users/");
@@ -23,12 +25,6 @@ class Main extends PluginBase implements Listener{
 		}
 		if(!(is_dir($this->getDataFolder()."Backups/"))){
 			@mkdir($this->getDataFolder()."Backups/");
-			$filelog = fopen($fileLocation,"w");
-			$content = "|---PLAYER NAMES---|----RANK----|---UNIQUE CODE---|";
-			fwrite($filelog,$content);
-			fclose($filelog);
-
-			$this->getLogger()->info(TextFormat::YELLOW."Backup Folder Created/Loaded");
 		}
 		
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -81,5 +77,22 @@ class Main extends PluginBase implements Listener{
 						$sender->sendMessage(TextFormat::RED . "[DonateRank] What? X125");
 						return true;
 					}
-				}elseif($args[0] == "add"){
+				}elseif($args[1] == "rank list"){
+					if ($sender->hasPermission("donrank.rank.list")){
+						$ranklist1 = $
+					$sender->sendMessage(TextFormat::RED."[DonateRank] Ranks availables:");
+					$sender->sendMessage(TextFormat::GRAY. $ranklist1);
+					$sender->sendMessage(TextFormat::WHITE. $ranklist2);
+					$sender->sendMessage(TextFormat::GRAY. $ranklist3);
+					$sender->sendMessage(TextFormat::WHITE. $ranklist4);
+					$sender->sendMessage(TextFormat::GRAY. $ranklist5);
+					$sender->sendMessage(TextFormat::WHITE. $ranklist6);
+					}else{
+					$sender->sendMessage($this->permMessage);
+					return true;
+					}
+				}elseif{
+					
+					
+				}
 				// Plugin is still in progress, just saving it for Backup

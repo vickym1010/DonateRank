@@ -1,7 +1,12 @@
 name: Donation Rank
 main: DonRank\Main
 version: 0.1.0A
-api: [1.11.0, 1.12.0, 1.13.0]
+api:
+- 1.11.0
+- 1.12.0
+- 1.13.0
+- 2.0.0
+authors: [KennFatt, TheKillerTacos]
 commands:
   donation:
     usage: /donation

@@ -1,12 +1,9 @@
 # DonateRank
 DonateRank, A plugin that Helps you out with Donations
 
-> Requested By MikkiMCPE
+> Donations Management Plugin
 -------------
-This plugin was requested by MikkiMCPE,
-This plugin will give the player the rank they want
-and gives them the payment method. by requested, it will give 
-a custom Phone number for $$ deposit.
+Alternative plugin if you are not use BuyCraft
 
 # Commands:
 | Command | Subcommand | Description |
